@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '101/card_learn.dart';
-import '101/image_learn.dart';
-import '101/padding_learn.dart';
-import 'demos/note_demos_app.dart';
+import '101/column_row_learn.dart';
+import '101/list_tite.dart';
+import '101/stack_lear.dart';
+import 'core/random_image.dart';
+import 'demos/stack_demo_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,13 +21,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData.dark().copyWith(
           // ignore: prefer_const_constructors
-          appBarTheme: AppBarTheme(
-        centerTitle: true,
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        systemOverlayStyle: SystemUiOverlayStyle.light,
-      )),
-      home: const NoteDemosApp(),
+          progressIndicatorTheme:
+              const ProgressIndicatorThemeData(color: Colors.white),
+          appBarTheme: const AppBarTheme(
+            centerTitle: true,
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+            systemOverlayStyle: SystemUiOverlayStyle.light,
+          )),
+      home: const StackView(),
     );
   }
 }
