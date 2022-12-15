@@ -3,8 +3,10 @@ import 'package:flutter/services.dart';
 
 import '101/column_row_learn.dart';
 import '101/list_tite.dart';
+import '101/page_view_learn.dart';
 import '101/stack_lear.dart';
 import '101/stateful_learn.dart';
+import '101/statefull_life_cycle.dart';
 import 'core/random_image.dart';
 import 'demos/stack_demo_view.dart';
 
@@ -30,7 +32,8 @@ class MyApp extends StatelessWidget {
             elevation: 0,
             systemOverlayStyle: SystemUiOverlayStyle.light,
           )),
-      home: const StatefullLearn(),
+      home: const StetefullLifeView(message: 'veli aAA'),
+      //58.28
     );
   }
 }
