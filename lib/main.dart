@@ -7,6 +7,7 @@ import '101/page_view_learn.dart';
 import '101/stack_lear.dart';
 import '101/stateful_learn.dart';
 import '101/statefull_life_cycle.dart';
+import '101/text_field.dart';
 import 'core/random_image.dart';
 import 'demos/stack_demo_view.dart';
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
             elevation: 0,
             systemOverlayStyle: SystemUiOverlayStyle.light,
           )),
-      home: const StetefullLifeView(message: 'veli aAA'),
+      home: const TextFieldLearn(),
       //58.28
     );
   }
