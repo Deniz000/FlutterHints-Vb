@@ -9,6 +9,8 @@ import '101/stateful_learn.dart';
 import '101/statefull_life_cycle.dart';
 import '101/text_field.dart';
 import 'core/random_image.dart';
+import 'demos/color_demos_view.dart';
+import 'demos/color_life_cycle.dart';
 import 'demos/stack_demo_view.dart';
 
 void main() {
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
             elevation: 0,
             systemOverlayStyle: SystemUiOverlayStyle.light,
           )),
-      home: const TextFieldLearn(),
+      home: const ColorLifeCycleView(),
       //58.28
     );
   }

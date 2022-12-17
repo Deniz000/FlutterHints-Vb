@@ -40,9 +40,6 @@ class _TextFieldLearnState extends State<TextFieldLearn> {
               // filled: true
             ),
           ),
-          TextField(
-            focusNode: focusNodeOne,
-          )
         ],
       ),
     );
